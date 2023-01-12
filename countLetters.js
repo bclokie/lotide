@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function(sentence) {
+const countLetters = (sentence) => {
   let letterCount = {};
   for (let letter of sentence) {
     if (letter !== " ") {
@@ -19,7 +19,6 @@ const countLetters = function(sentence) {
   }
   return letterCount;
 }
-
 
 assertEqual(countLetters("LHL"), {L:2,H:1});
 
